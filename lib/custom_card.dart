@@ -26,7 +26,12 @@ class CustomCard extends StatelessWidget {
                 Text(cricket.team1Name),
               ],
             ),
-            const Text('Vs', style: TextStyle(fontWeight: FontWeight.bold)),
+            Column(
+              children: [
+                const Text('Vs', style: TextStyle(fontWeight: FontWeight.bold)),
+                 Text(cricket.matchName, style: TextStyle(fontWeight: FontWeight.bold)),
+              ],
+            ),
             Column(
               children: [
                 Text(cricket.team2, style: const TextStyle(fontWeight: FontWeight.bold)),

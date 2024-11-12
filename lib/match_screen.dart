@@ -35,9 +35,7 @@ class _MatchScreenState extends State<MatchScreen> {
           team2Name: doc['team2Name'].toString(),
           team1: doc['team1'].toString(),
           team2: doc['team2'].toString(),
-          matchName: doc.data().containsKey('angvsbrazil')
-              ? doc['angvsbrazil'].toString()
-              : 'Unknown Match Name', // Handle missing field gracefully
+          matchName: doc.id,
         );
       }).toList();
 
